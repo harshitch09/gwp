@@ -1,0 +1,174 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo
+{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 8%;
+    width: auto;
+
+    transition: 0.7s ease-out;
+    opacity: 0;
+}
+
+#head
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    text-align: justify;
+    font-size: 150%;
+
+    transition: 0.7s ease-out;
+    opacity: 0;
+}
+#content
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35%;
+    width: 40%;
+    text-align: justify;
+    font-size: 80%;
+
+    transition: 0.7s ease-out;
+    opacity: 0;
+}
+.high
+{
+  background-image: linear-gradient(to right, transparent 50%, #0337c7 50%);
+  background-origin: 0;
+  background-size: 200% 10%;
+  background-repeat: repeat-x;
+  background-position: -100% 100%;
+  transition: 0.7s;
+}
+#footer
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
+    width: 40%;
+    text-align: justify;
+    font-size: 80%;
+    padding-left: 10px;
+    border-left: 4px solid #0337c7;
+
+    transition: 0.7s ease-out;
+    opacity: 0;
+}
+
+#end_link
+{
+    position: absolute;
+    top: 75%;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.7s ease-out;
+    opacity: 0;
+}
+#end_link a
+{
+    text-decoration: none;
+    z-index: 5;
+    color: #0337c7;
+    font-size: 90%;
+}
+#end_link span
+{
+    z-index: 5;
+    color: #0337c7;
+}
+#end_link a:hover
+{
+    cursor: pointer;
+}
+#end_link a:active
+{
+    color: #ee0000;
+}
+#dot1
+{
+    position: absolute;
+    top: 50%;
+    left: -7%;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-color: #0337c7;
+    animation: shuffle 17s linear infinite;
+    transition: 0.7s ease-out;
+    opacity: 0;
+}
+
+#dot2
+{
+    position: absolute;
+    top: -5%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-color: #fd5151;
+    animation: shuffle 15s ease-in-out infinite;
+    transition: 0.7s linear;
+    opacity: 0;
+}
+
+@keyframes shuffle {
+    0%
+    {
+        transform: translate(0,0);
+    }
+    12.5%
+    {
+        transform: scale(1.005);
+    }
+    25%
+    {
+        transform: translate(-10px, -10px);
+    }
+    37.5%
+    {
+        transform: scale(0.999);
+    }
+    50%
+    {
+        transform: translate(-20px, 0);
+    }
+    62.5%
+    {
+        transform: scale(1);
+    }
+    75%
+    {
+        transform: translate(-10px, 10px);
+    }
+    87.5%
+    {
+        transform: scale(0.995);
+    }
+    100% 
+    {
+        transform: translate(0, 0);
+    }
+    
+}
